@@ -15,7 +15,7 @@ header {
 }
 
 main {
-  padding-top: 60px; /* Damit der Inhalt unter dem Header beginnt */
+  padding-top: 100px; /* Damit der Inhalt unter dem Header beginnt */
 }
 
 footer {
@@ -42,4 +42,32 @@ footer nav ul li {
 footer nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.question-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.show-answer {
+  margin-top: 10px;
+}
+
+.answer {
+  margin-top: 10px;
 }
