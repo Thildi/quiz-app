@@ -15,24 +15,31 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <div class="question-card">
-        <i class="fa-solid fa-bookmark fa-2xl" style="color: #74c0fc"></i>
+      <article class="question-card">
+        <i
+          class="fa-solid fa-bookmark fa-2xl"
+          style="color: #74c0fc"
+          aria-label="Bookmark icon"
+          role="img"
+        ></i>
         <h2>Question 1</h2>
         <div class="tags">
           <span class="tag">Category 1</span>
           <span class="tag">Category 2</span>
         </div>
-        <button class="show-answer">Show Answer</button>
+        <button class="show-answer" aria-label="Show the answer to Question 1">
+          Show Answer
+        </button>
         <div class="answer" style="display: none">
           <p>This is the answer to the question.</p>
         </div>
-      </div>
+      </article>
     </main>
     <footer>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li>
-            <a href="index.html" class="nav-button"
+            <a href="index.html" class="nav-button" aria-label="Home"
               ><i
                 class="fa-sharp fa-solid fa-house fa-2xl"
                 style="color: #74c0fc"
@@ -40,12 +47,12 @@
             ></a>
           </li>
           <li>
-            <a href="bookmarks.html" class="nav-button"
+            <a href="bookmarks.html" class="nav-button" aria-label="Bookmarks"
               ><i class="fa-solid fa-bookmark fa-2xl" style="color: #74c0fc"></i
             ></a>
           </li>
           <li>
-            <a href="profile.html" class="nav-button"
+            <a href="profile.html" class="nav-button" aria-label="Profile"
               ><i class="fa-solid fa-user fa-2xl" style="color: #74c0fc"></i
             ></a>
           </li>
