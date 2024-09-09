@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,24 +14,31 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
+    <main class="content_container">
       <article class="question-card">
-        <i
-          class="fa-solid fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Bookmark icon"
-          role="img"
-        ></i>
-        <h2>Question 1</h2>
-        <div class="tags">
-          <span class="tag">Category 1</span>
-          <span class="tag">Category 2</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 1">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i
+            class="fa-solid fa-bookmark fa-2xl"
+            style="color: #74c0fc"
+            aria-label="Bookmark icon"
+            role="img"
+          ></i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the question.</p>
+        <h2>Was ist HTML und wofür wird es verwendet?</h2>
+        <button class="show-answer" aria-label="Show the answer to Question 1">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            HTML (HyperText Markup Language) ist die
+            Standard-Auszeichnungssprache für Dokumente, die im Web angezeigt
+            werden. Es wird verwendet, um die Struktur von Webseiten zu
+            erstellen, indem Texte, Links, Bilder, Tabellen und andere Inhalte
+            definiert werden.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#HTML</span>
         </div>
       </article>
     </main>

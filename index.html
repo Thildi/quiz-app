@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,112 +14,126 @@
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main>
+
+    <main class="content_container">
       <article class="question-card">
-        <i
-          class="fa-regular fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Add to bookmarks"
-          role="button"
-          tabindex="0"
-        ></i>
-        <h2>Question 1</h2>
-        <div class="tags">
-          <span class="tag">Category 1</span>
-          <span class="tag">Category 2</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 1">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i
+            class="fa-regular fa-bookmark fa-2xl"
+            style="color: #74c0fc"
+            aria-label="Add to bookmarks"
+            role="button"
+            tabindex="0"
+          ></i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the question.</p>
+        <h2>Was ist HTML und wofür wird es verwendet?</h2>
+        <button class="show-answer" aria-label="Show the answer to Question 1">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            HTML (HyperText Markup Language) ist die
+            Standard-Auszeichnungssprache für Dokumente, die im Web angezeigt
+            werden. Es wird verwendet, um die Struktur von Webseiten zu
+            erstellen, indem Texte, Links, Bilder, Tabellen und andere Inhalte
+            definiert werden.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#HTML</span>
         </div>
       </article>
 
       <!-- Frage 2 -->
       <article class="question-card">
-        <i
-          class="fa-regular fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Add to bookmarks"
-          role="button"
-          tabindex="0"
-        ></i>
-        <h2>Question 2</h2>
-        <div class="tags">
-          <span class="tag">Category 3</span>
-          <span class="tag">Category 4</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 2">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i class="fa-regular fa-bookmark fa-2xl" style="color: #74c0fc"></i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the second question.</p>
+        <h2>Was ist der Zweck des &lt;meta&gt;-Tags in HTML?</h2>
+        <button class="show-answer" aria-label="Show the answer to Question 2">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            <meta />&lt;meta&gt;-Tags bieten Meta-Informationen über eine
+            HTML-Seite, wie z.B. die Beschreibung, Schlüsselwörter, den Autor
+            und Einstellungen für die Anzeige auf Mobilgeräten. Sie sind
+            unsichtbar für den Nutzer, aber wichtig für Suchmaschinen und
+            Browser.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#HTML</span>
         </div>
       </article>
 
       <!-- Frage 3 -->
       <article class="question-card">
-        <i
-          class="fa-regular fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Add to bookmarks"
-          role="button"
-          tabindex="0"
-        ></i>
-        <h2>Question 3</h2>
-        <div class="tags">
-          <span class="tag">Category 3</span>
-          <span class="tag">Category 4</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 3">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i class="fa-regular fa-bookmark fa-2xl" style="color: #74c0fc"> </i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the second question.</p>
+        <h2>Was macht das &lt;a&gt;-Tag und welche Attribute sind wichtig?</h2>
+        <button class="show-answer" aria-label="Show the answer to Question 3">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            Das &lt;a&gt;-Tag wird verwendet, um Links zu erstellen. Wichtige
+            Attribute sind href für die Ziel-URL, target (z.B. _blank, um den
+            Link in einem neuen Tab zu öffnen) und rel (z.B. noopener, um
+            Sicherheitsrisiken zu minimieren).
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#HTML</span>
         </div>
       </article>
 
       <!-- Frage 4 -->
       <article class="question-card">
-        <i
-          class="fa-regular fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Add to bookmarks"
-          role="button"
-          tabindex="0"
-        ></i>
-        <h2>Question 4</h2>
-        <div class="tags">
-          <span class="tag">Category 3</span>
-          <span class="tag">Category 4</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 4">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i class="fa-regular fa-bookmark fa-2xl" style="color: #74c0fc"></i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the second question.</p>
+        <h2>Wie funktioniert das Box-Modell in CSS?</h2>
+        <button class="show-answer" aria-label="Show the answer to Question 4">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            Das Box-Modell beschreibt den Aufbau eines Elements: content
+            (Inhalt), padding (Innenabstand), border (Rahmen) und margin
+            (Außenabstand). Diese Bereiche bestimmen den Platzbedarf eines
+            Elements auf der Seite.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#CSS</span>
         </div>
       </article>
       <!-- Frage 5 -->
       <article class="question-card">
-        <i
-          class="fa-regular fa-bookmark fa-2xl"
-          style="color: #74c0fc"
-          aria-label="Add to bookmarks"
-          role="button"
-          tabindex="0"
-        ></i>
-        <h2>Question 5</h2>
-        <div class="tags">
-          <span class="tag">Category 3</span>
-          <span class="tag">Category 4</span>
-        </div>
-        <button class="show-answer" aria-label="Show the answer to Question 5">
-          Show Answer
+        <button class="bookmark-button" aria-label="Add to bookmarks">
+          <i class="fa-regular fa-bookmark fa-2xl" style="color: #74c0fc"></i>
         </button>
-        <div class="answer" style="display: none">
-          <p>This is the answer to the second question.</p>
+        <h2>
+          Was ist der Unterschied zwischen inline, block und inline-block in
+          CSS?
+        </h2>
+        <button class="show-answer" aria-label="Show the answer to Question 5">
+          Antwort
+        </button>
+        <div class="answer">
+          <p>
+            <strong>inline:</strong> Elemente nehmen nur so viel Platz ein, wie
+            ihr Inhalt benötigt, und respektieren keine Höhe oder Breite.<br />
+            <strong>block:</strong> Elemente nehmen die gesamte Breite des
+            Containers ein und beginnen eine neue Zeile.<br />
+            <strong>inline-block:</strong> Elemente verhalten sich wie inline,
+            aber Höhe und Breite können angepasst werden.
+          </p>
+        </div>
+        <div class="tags">
+          <span class="tag">#CSS</span>
         </div>
       </article>
     </main>
