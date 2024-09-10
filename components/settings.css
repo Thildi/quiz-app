@@ -4,12 +4,13 @@
   text-align: center;
 }
 
-.dark-mode-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Dark Mode Stile */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
 }
 
-.dark-mode-toggle input {
-  margin-left: 10px;
+/* Beispiel für spezifische Anpassungen im Dark Mode */
+.header.dark-mode {
+  background-color: #1e1e1e;
 }
