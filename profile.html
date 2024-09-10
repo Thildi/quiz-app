@@ -13,10 +13,44 @@
   <body>
     <header>
       <h1>Quiz App</h1>
-    </header>
-    <main class="content_container">
-      <p>Hier kommen Infos zu mir noch rein!</p>
-    </main class="content_container">
+    </header aria-label="Header">
+    <main class="content_container" aria-labelledby="profile-section">
+      <section class="profile" id="profile-section">
+        <div class="profile-info" aria-labelledby="profile-name" role="region">
+          <div class="profile-image" aria-hidden="true">
+            <img
+              src="f2720901-d981-4e11-881b-d2eab9f1a3aa.jpeg"
+              alt="Profilbild von Marthilda Vollmer"
+            />
+          </div>
+          <h2>Marthilda Vollmer</h2>
+          <p class="about-me" aria-label="Über mich">
+            Hey!<br />Ich bin Marthilda und habe diese Quiz App gebaut.
+          </p>
+        </div>
+
+        <div class="counters" aria-label="Zähler für erstellte Fragen und Lesezeichen">
+          <div class="counter-item" aria-label="Erstellte Fragen">
+            <i class="fas fa-question-circle"></i>
+            <span>5</span>
+          </div>
+          <div class="counter-item" aria-label="Lesezeichen">
+            <i class="fas fa-bookmark"></i>
+            <span>1</span>
+          </div>
+        </div>
+
+        <div class="settings" aria-label="Einstellungen">
+          <h3>Einstellungen</h3>
+          <label class="dark-mode-toggle" aria-label="Schalter für Dunkelmodus">
+            Dunkelmodus
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <nav aria-label="Main navigation">
         <ul>
