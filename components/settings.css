@@ -1,0 +1,15 @@
+.settings {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode-toggle input {
+  margin-left: 10px;
+}

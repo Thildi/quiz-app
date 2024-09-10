@@ -1,0 +1,36 @@
+footer {
+  background: var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+footer nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 60px;
+}
+
+footer nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+footer nav ul li a .fa-2xl {
+  font-size: 2.5em; /* Icon-Größe anpassen */
+}

@@ -1,0 +1,41 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-image img {
+  width: 180px;
+  height: 230px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+.counters {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.counter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-item i {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.counter-item span {
+  margin-top: 5px;
+  font-size: 18px;
+}
