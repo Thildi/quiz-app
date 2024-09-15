@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Profil</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -11,13 +11,13 @@
     />
     <script src="./index.js" defer></script>
   </head>
-  <body data-js="body">
+  <body class="profile-page" data-js="profile-page">
     <header>
       <h1>Quiz App</h1>
     </header aria-label="Header">
-    <main class="content_container" aria-labelledby="profile-section">
+    <main class="content_container" aria-labelledby="profil-abschnitt">
       <section class="profile" id="profile-section">
-        <div class="profile-info" aria-labelledby="profile-name" role="region">
+        <div class="profile-info" aria-labelledby="profil-name" role="region">
           <div class="profile-image" aria-hidden="true">
             <img
               src="./pictures/f2720901-d981-4e11-881b-d2eab9f1a3aa.jpeg"
@@ -31,11 +31,11 @@
         </div>
 
         <div class="counters" aria-label="Zähler für erstellte Fragen und Lesezeichen">
-          <div class="counter-item" aria-label="Erstellte Fragen">
+          <div class="counter-item" aria-label="Erstellte Fragen" title="Erstellte Fragen">
             <i class="fas fa-question-circle"></i>
             <span>5</span>
           </div>
-          <div class="counter-item" aria-label="Lesezeichen">
+          <div class="counter-item" aria-label="Lesezeichen" title="Deine Lesezeichen">
             <i class="fas fa-bookmark"></i>
             <span>1</span>
           </div>
@@ -53,10 +53,10 @@
     </main>
 
     <footer>
-      <nav aria-label="Main navigation">
+      <nav aria-label="Hauptnavigation">
         <ul>
           <li>
-            <a href="index.html" class="nav-button" aria-label="Home"
+            <a href="index.html" class="nav-button" aria-label="Startseite" title="Startseite"
               ><i
                 class="fa-sharp fa-solid fa-house fa-2xl"
                 style="color: #74c0fc"
@@ -64,7 +64,7 @@
             ></a>
           </li>
           <li>
-            <a href="bookmarks.html" class="nav-button" aria-label="Bookmarks"
+            <a href="bookmarks.html" class="nav-button" aria-label="Lesezeichen" title="Lesezeichen"
               ><i
                 class="fa-regular fa-bookmark fa-2xl"
                 style="color: #74c0fc"
@@ -72,7 +72,7 @@
             ></a>
           </li>
           <li>
-            <a href="profile.html" class="nav-button" aria-label="Profile"
+            <a href="profile.html" class="nav-button" aria-label="Profil" title="Profilseite"
               ><i class="fa-solid fa-user fa-2xl" style="color: #74c0fc"></i
             ></a>
           </li>
