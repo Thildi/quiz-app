@@ -15,11 +15,21 @@ h2 {
   position: relative;
 }
 
+.dark-mode .question-card {
+  background-color: #333; /* Dunkler Hintergrund im Dark Mode */
+  color: #eee; /* Heller Text im Dark Mode */
+  border: 1px solid #555; /* Dunklerer Rahmen im Dark Mode */
+}
+
 .answer {
   margin-top: 10px;
   display: none;
 }
 
-.show-answer:hover + .answer {
+.answer.visible {
   display: block;
 }
+
+/*.show-answer:hover + .answer {
+  display: block;
+}*/

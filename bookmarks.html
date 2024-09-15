@@ -3,32 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookmarks</title>
+    <title>Lesezeichen</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <script src="./index.js" defer></script>
   </head>
-  <body>
+  <body class="bookmarks-page" data-js="bookmarks-page">
     <header>
       <h1>Quiz App</h1>
     </header>
     <main class="content_container">
       <article class="question-card">
-        <button class="bookmark-button" aria-label="Add to bookmarks">
+        <button
+          class="bookmark-button"
+          data-js="bookmark-button"
+          aria-label="Lesezeichen"
+          title="Lesezeichen"
+        >
           <i
             class="fa-solid fa-bookmark fa-2xl"
             style="color: #74c0fc"
-            aria-label="Bookmark icon"
+            aria-label="Lesezeichen Icon"
             role="img"
           ></i>
         </button>
         <h2>Was ist HTML und wofür wird es verwendet?</h2>
-        <button class="show-answer" aria-label="Show the answer to Question 1">
+        <button
+          class="show-answer"
+          data-js="answer-button"
+          aria-label="Antwort"
+          title="Zeige die Antwort"
+        >
           Antwort
         </button>
-        <div class="answer">
+        <div class="answer" data-js="answer">
           <p>
             HTML (HyperText Markup Language) ist die
             Standard-Auszeichnungssprache für Dokumente, die im Web angezeigt
@@ -37,16 +48,20 @@
             definiert werden.
           </p>
         </div>
-        <div class="tags">
+        <div class="tags" aria-label="Schlagwort">
           <span class="tag">#HTML</span>
         </div>
       </article>
     </main>
     <footer>
-      <nav aria-label="Main navigation">
+      <nav aria-label="Hauptnavigation">
         <ul>
           <li>
-            <a href="index.html" class="nav-button" aria-label="Home"
+            <a
+              href="index.html"
+              class="nav-button"
+              aria-label="Startseite"
+              title="Startseite"
               ><i
                 class="fa-sharp fa-solid fa-house fa-2xl"
                 style="color: #74c0fc"
@@ -54,12 +69,20 @@
             ></a>
           </li>
           <li>
-            <a href="bookmarks.html" class="nav-button" aria-label="Bookmarks"
+            <a
+              href="bookmarks.html"
+              class="nav-button"
+              aria-label="Lesezeichen"
+              title="Lesezeichen"
               ><i class="fa-solid fa-bookmark fa-2xl" style="color: #74c0fc"></i
             ></a>
           </li>
           <li>
-            <a href="profile.html" class="nav-button" aria-label="Profile"
+            <a
+              href="profile.html"
+              class="nav-button"
+              aria-label="Profil"
+              title="Profilseite"
               ><i class="fa-solid fa-user fa-2xl" style="color: #74c0fc"></i
             ></a>
           </li>
