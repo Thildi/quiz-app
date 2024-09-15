@@ -13,6 +13,11 @@ footer {
   height: 50px;
 }
 
+.dark-mode footer {
+  background-color: #222222; /* Dunkler Hintergrund für den Footer im Dark Mode */
+  color: #eee; /* Heller Text für den Footer im Dark Mode */
+}
+
 footer nav ul {
   display: flex;
   list-style-type: none;

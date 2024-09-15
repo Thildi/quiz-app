@@ -29,7 +29,3 @@ h2 {
 .answer.visible {
   display: block;
 }
-
-/*.show-answer:hover + .answer {
-  display: block;
-}*/
