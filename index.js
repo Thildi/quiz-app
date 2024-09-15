@@ -6,11 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Überprüfe, ob der Dark Mode Toggle Button vorhanden ist
   if (toggleButton) {
-    // Prüfe und wende den gespeicherten Dark Mode Status an
-    if (localStorage.getItem("dark-mode") === "enabled") {
-      document.body.classList.add("dark-mode");
-    }
-
     toggleButton.addEventListener("click", () => {
       // Toggle der Dark Mode Klasse
       document.body.classList.toggle("dark-mode");
