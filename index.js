@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("dark-mode");
   }
 });
+
 /* -------------------------SHOW-ANSWER-BUTTON-IMPLEMENTATION------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const answerButtons = document.querySelectorAll('[data-js="answer-button"]');

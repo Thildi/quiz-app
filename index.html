@@ -17,6 +17,23 @@
     </header>
 
     <main class="content_container">
+      <section class="add-question">
+        <fieldset >
+        <h2>Neue Karte erstellen</h2>
+        <form id="add-question-form">
+          <label for="question">Frage:</label>
+          <input type="text" id="question" name="question" title="Deine Frage" required />
+    
+          <label for="answer">Antwort:</label>
+          <textarea id="answer" name="answer" title="Deine Antwort" required></textarea>
+    
+          <label for="tags">Schlagwörter (optional):</label>
+          <input type="text" id="tags" name="tags" />
+    
+          <button type="submit">Karte hinzufügen</button>
+        </fieldset>
+        </form>
+      </section>
       <article class="question-card">
         <button
           class="bookmark-button"
@@ -181,7 +198,9 @@
           <span class="tag">#CSS</span>
         </div>
       </article>
+
     </main>
+
     <footer>
       <nav aria-label="Main navigation">
         <ul>

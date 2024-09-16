@@ -1,0 +1,64 @@
+.add-question {
+  margin: 20px 0;
+}
+
+fieldset {
+  background-color: var(--cards-backround-color);
+  box-shadow: 0 2px 4px var(--box-shadow);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  border-radius: 5px; /* Abgerundete Ecken */
+  padding: 10px; /* Abstand innen */
+}
+
+.add-question h2 {
+  margin-bottom: 10px;
+}
+
+.add-question form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-question label {
+  margin: 5px 0;
+}
+
+.add-question input,
+.add-question textarea {
+  margin-bottom: 10px;
+}
+
+.add-question button {
+  align-self: center;
+  border: none;
+  margin-top: 10px; /* Abstand nach oben */
+  padding: 10px 20px; /* Vergrößert den Innenabstand für mehr Fläche */
+  font-size: 18px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+/* Dark Mode Stile */
+.dark-mode .add-question {
+  margin: 20px 0;
+}
+
+.dark-mode fieldset {
+  background-color: #444; /* Dunkler Hintergrund im Dark Mode */
+  box-shadow: 0 2px 4px #333; /* Dunklerer Schatten im Dark Mode */
+  border: 1px solid var(--primary-color); /* Dunklerer Rahmen im Dark Mode */
+}
+
+.dark-mode .add-question h2 {
+  color: #eee; /* Hellerer Text im Dark Mode */
+}
+
+.dark-mode .add-question input,
+.dark-mode .add-question textarea {
+  background-color: #555; /* Dunklerer Hintergrund für Eingabefelder im Dark Mode */
+  color: #eee; /* Hellerer Text für Eingabefelder im Dark Mode */
+  border: 1px solid #666; /* Dunklerer Rahmen für Eingabefelder im Dark Mode */
+}

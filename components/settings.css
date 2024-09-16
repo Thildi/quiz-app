@@ -10,7 +10,8 @@ body.dark-mode {
   color: white;
 }
 
-/* Beispiel für spezifische Anpassungen im Dark Mode */
-.header.dark-mode {
-  background-color: #1e1e1e;
+.dark-mode .question-card {
+  background-color: #333; /* Dunkler Hintergrund im Dark Mode */
+  color: #eee; /* Heller Text im Dark Mode */
+  border: 1px solid #555; /* Dunklerer Rahmen im Dark Mode */
 }
