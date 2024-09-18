@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.add("dark-mode");
   }
 });
-/* -------------------------SHOW-ANSWER-BUTTON-IMPLEMENTATION------------------------------*/
+
+/* -------------------------SHOW-AND-HIDE-ANSWER-BUTTON-IMPLEMENTATION------------------------------*/
 document.addEventListener("DOMContentLoaded", function () {
   const answerButtons = document.querySelectorAll('[data-js="answer-button"]');
 
@@ -36,6 +37,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Umschalten der "visible"-Klasse
       answerDiv.classList.toggle("visible");
+
+      if (answerDiv.classList.contains("visible")) {
+        this.textContent = "Antwort verstecken";
+      } else {
+        this.textContent = "Antwort";
+      }
+    });
+  });
+});
+
+/*----------------------------BOOKMARK-TOGGLE-IMPLEMENTATION---------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const bookmarkButtons = document.querySelectorAll(
+    '[data-js="bookmark-button"]'
+  );
+
+  bookmarkButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const icon = this.querySelector("i");
+
+      // Icon-Klasse umschalten zwischen "fa-regular" und "fa-solid"
+      if (icon.classList.contains("fa-regular")) {
+        icon.classList.remove("fa-regular");
+        icon.classList.add("fa-solid");
+        icon.style.color = "#74c0fc"; // Farbe ändern, falls gewünscht
+      } else {
+        icon.classList.remove("fa-solid");
+        icon.classList.add("fa-regular");
+        icon.style.color = ""; // Farbe zurücksetzen
+      }
     });
   });
 });

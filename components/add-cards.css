@@ -1,0 +1,54 @@
+/* Stile für das Formular, das neue Fragen hinzufügt */
+.add-question {
+  margin: 20px 0; /* Vertikaler Abstand von 20px oben und unten */
+}
+
+/* Stile für das Fieldset innerhalb des Formulars */
+fieldset {
+  background-color: var(
+    --cards-backround-color
+  ); /* Hintergrundfarbe, festgelegt durch eine CSS-Variable */
+  box-shadow: 0 2px 4px var(--box-shadow); /* Schatteneffekt, festgelegt durch eine CSS-Variable */
+  border: 1px solid var(--primary-color); /* Rahmen des Fieldsets, festgelegt durch eine CSS-Variable */
+  border-radius: 5px; /* Abgerundete Ecken des Fieldsets */
+  padding: 10px; /* Innenabstand des Fieldsets */
+}
+
+/* Stile für das <h2>-Element innerhalb des Formulars */
+.add-question h2 {
+  margin-bottom: 10px; /* Abstand unten zum nächsten Element */
+}
+
+/* Stile für das Formular innerhalb der .add-question-Klasse */
+.add-question form {
+  display: flex; /* Verwendet Flexbox für die Layout-Anordnung */
+  flex-direction: column; /* Anordnung der Formularelemente in einer Spalte */
+}
+
+/* Stile für die Labels innerhalb des Formulars */
+.add-question label {
+  margin: 10px 0; /* Abstand oben und unten zum nächsten Element */
+}
+
+/* Stile für die Eingabefelder und Textareas innerhalb des Formulars */
+.add-question input,
+.add-question textarea {
+  margin-bottom: 10px; /* Abstand unten zum nächsten Element */
+}
+
+/* Stile für den Button innerhalb des Formulars */
+.add-question button {
+  align-self: center; /* Zentriert den Button horizontal innerhalb des Flex-Containers */
+  border: none; /* Kein Rahmen um den Button */
+  margin-top: 30px; /* Abstand oben zum vorhergehenden Element */
+  padding: 10px 20px; /* Innenabstand des Buttons: 10px oben und unten, 20px links und rechts */
+  font-size: 18px; /* Schriftgröße des Button-Textes */
+  background-color: var(
+    --secondary-color
+  ); /* Hintergrundfarbe des Buttons, festgelegt durch eine CSS-Variable */
+  color: var(
+    --text-color
+  ); /* Textfarbe des Buttons, festgelegt durch eine CSS-Variable */
+  cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+  border-radius: 50px; /* Abgerundete Ecken des Buttons */
+}

@@ -11,8 +11,3 @@
   padding: 5px;
   margin-right: 5px;
 }
-
-.dark-mode .tag {
-  background-color: #555; /* Dunklerer Hintergrund für Tags im Dark Mode */
-  color: #ddd; /* Hellerer Text für Tags im Dark Mode */
-}
