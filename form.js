@@ -1,15 +1,15 @@
 /*-----------------------SUBMIT-NEW-CARD-IMPLEMENTATION----------------------*/
 
-const form = document.getElementById("add-question-form");
-const fieldset = document.getElementById("fieldset");
+const form = document.querySelector('[data-js="add-question-form"]');
+const fieldset = document.querySelector('[data-js="fieldset"]');
 
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Verhindere das Standard-Submit-Verhalten
 
   // Lese die eingegebenen Daten aus den Formularfeldern
-  const question = document.getElementById("question").value.trim();
-  const answer = document.getElementById("answer").value.trim();
-  const tags = document.getElementById("tags").value.trim();
+  const question = document.querySelector('[data-js="question"]').value.trim();
+  const answer = document.querySelector('[data-js="answer"]').value.trim();
+  const tags = document.querySelector('[data-js="tags"]').value.trim();
 
   if (question && answer) {
     // Erstelle den HTML-String für die Karte
@@ -54,8 +54,10 @@ form.addEventListener("submit", function (event) {
 
     // Füge Event-Listener für den Toggle-Button hinzu
     const cardContainer = fieldset.nextElementSibling;
-    const toggleButton = cardContainer.querySelector(".show-answer");
-    const answerDiv = cardContainer.querySelector(".answer");
+    const toggleButton = cardContainer.querySelector(
+      '[data-js="answer-button"]'
+    );
+    const answerDiv = cardContainer.querySelector('[data-js="answer"]');
 
     toggleButton.addEventListener("click", function () {
       answerDiv.classList.toggle("visible");
@@ -71,7 +73,9 @@ form.addEventListener("submit", function (event) {
     });
 
     // Füge Event-Listener für den Bookmark-Button hinzu
-    const bookmarkButton = cardContainer.querySelector(".bookmark-button");
+    const bookmarkButton = cardContainer.querySelector(
+      '[data-js="bookmark-button"]'
+    );
     bookmarkButton.addEventListener("click", function () {
       const icon = this.querySelector("i");
 

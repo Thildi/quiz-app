@@ -26,6 +26,7 @@
             <textarea
               id="question"
               name="question"
+              data-js="question"
               title="Deine Frage"
               maxlength="150"
               rows="5"
@@ -38,6 +39,7 @@
             <textarea
               id="answer"
               name="answer"
+              data-js="answer"
               title="Deine Antwort"
               maxlength="150"
               rows="5"
@@ -47,7 +49,7 @@
             <div class="char-count" data-for="answer">150 Zeichen übrig</div>
 
             <label for="tags">Tag:</label>
-            <input type="text" id="tags" name="tags" />
+            <input type="text" data-js="tags" id="tags" name="tags" />
 
             <button type="submit">Karte hinzufügen</button>
           </form>
