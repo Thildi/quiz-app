@@ -1,41 +1,45 @@
+/* Allgemeine Stile für den Footer */
 footer {
-  background: var(--secondary-color);
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
+  background: var(
+    --secondary-color
+  ); /* Hintergrundfarbe des Footers, festgelegt durch eine CSS-Variable */
+  padding: 10px; /* Innenabstand des Footers */
+  text-align: center; /* Zentriert den Text im Footer */
+  position: fixed; /* Fixiert den Footer am unteren Rand des Viewports */
+  width: 100%; /* Macht den Footer so breit wie das gesamte Viewport */
+  bottom: 0; /* Positioniert den Footer am unteren Rand des Viewports */
+  left: 0; /* Positioniert den Footer am linken Rand des Viewports */
+  z-index: 1000; /* Stellt sicher, dass der Footer über anderen Inhalten liegt */
+  display: flex; /* Verwendet Flexbox für die Layout-Anordnung */
+  justify-content: center; /* Zentriert die Inhalte horizontal im Footer */
+  align-items: center; /* Zentriert die Inhalte vertikal im Footer */
+  height: 50px; /* Höhe des Footers */
 }
 
-.dark-mode footer {
-  background-color: #222222; /* Dunkler Hintergrund für den Footer im Dark Mode */
-  color: #eee; /* Heller Text für den Footer im Dark Mode */
-}
-
+/* Stile für die Navigationsliste im Footer */
 footer nav ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 60px;
+  display: flex; /* Verwendet Flexbox für die Anordnung der Listenelemente */
+  list-style-type: none; /* Entfernt die Standard-Aufzählungszeichen der Liste */
+  padding: 0; /* Entfernt die Standard-Padding der Liste */
+  margin: 0; /* Entfernt die Standard-Margin der Liste */
+  gap: 60px; /* Abstand zwischen den Listenelementen */
 }
 
+/* Stile für die Listenelemente im Footer */
 footer nav ul li {
-  display: flex;
-  align-items: center;
+  display: flex; /* Verwendet Flexbox für die Anordnung der Inhalte innerhalb der Listenelemente */
+  align-items: center; /* Zentriert die Inhalte innerhalb der Listenelemente vertikal */
 }
 
+/* Stile für die Links in der Navigationsliste des Footers */
 footer nav ul li a {
-  text-decoration: none;
-  color: var(--primary-color);
+  text-decoration: none; /* Entfernt die Unterstreichung der Links */
+  color: var(
+    --primary-color
+  ); /* Textfarbe der Links, festgelegt durch eine CSS-Variable */
 }
 
+/* Stile für die Icons in der Navigationsliste des Footers */
 footer nav ul li a .fa-2xl {
-  font-size: 2.5em; /* Icon-Größe anpassen */
+  font-size: 2.5em; /* Größe der Icons anpassen */
 }

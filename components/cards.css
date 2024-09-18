@@ -1,25 +1,77 @@
-h2 {
-  display: flex;
-  justify-content: center;
-}
-
+/* Stil für die Frage-Karte */
 .question-card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--cards-backround-color);
-  border: 1px solid var(--cards-border-color);
-  border-radius: 5px;
-  margin: 30px 0;
-  padding: 15px;
-  box-shadow: 0 2px 4px var(--box-shadow);
-  position: relative;
+  display: flex; /* Verwendet Flexbox, um die Inhalte der Karte anzuordnen */
+  flex-direction: column; /* Anordnung der Inhalte in einer Spalte */
+  background-color: var(
+    --cards-backround-color
+  ); /* Hintergrundfarbe der Karte, festgelegt durch die CSS-Variable */
+  border: 1px solid var(--cards-border-color); /* Einfärbiger Rand der Karte, festgelegt durch die CSS-Variable */
+  border-radius: 5px; /* Abgerundete Ecken der Karte */
+  margin: 30px 0; /* Vertikale Abstände oben und unten */
+  padding: 15px; /* Innenabstand der Karte */
+  box-shadow: 0 2px 4px var(--box-shadow); /* Schatteneffekt für die Karte, festgelegt durch die CSS-Variable */
+  position: relative; /* Ermöglicht es, andere Elemente (wie den Bookmark-Button) relativ zur Karte zu positionieren */
 }
 
-.answer {
-  margin-top: 10px;
-  display: none;
-}
-
-.answer.visible {
+/* Stil für das <h2>-Element innerhalb der Karten- und Formular-Komponenten */
+.question-card h2 {
+  margin-top: 40px;
   display: block;
+  text-align: center;
+  width: 100%;
+}
+/* Stil für den Antwortbereich der Karte */
+.question-card .answer {
+  width: 100%;
+  margin-top: 10px; /* Abstand oben zum vorhergehenden Element */
+  display: none; /* Standardmäßig nicht angezeigt */
+}
+
+.question-card .question-text,
+.question-card .answer-text {
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Stil für die Antwort, wenn sie sichtbar ist */
+.answer.visible {
+  display: block; /* Zeigt die Antwort an */
+}
+
+/* Stil für den Bookmark-Button */
+.question-card .bookmark-button {
+  position: absolute; /* Absolute Positionierung innerhalb des Containers (Frage-Karte) */
+  top: 15px; /* Abstand vom oberen Rand des Containers */
+  right: 15px; /* Abstand vom rechten Rand des Containers */
+  background: none !important; /* Kein Hintergrundbild oder Farbe; !important stellt sicher, dass dies den Hintergrund überschreibt */
+  border: none; /* Kein Rahmen */
+  cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+  padding: 0; /* Kein zusätzlicher Innenabstand */
+  margin: 0; /* Kein zusätzlicher Außenabstand */
+}
+
+/* Stil für das Icon innerhalb des Bookmark-Buttons */
+.bookmark-button i {
+  color: var(
+    --primary-color
+  ); /* Setzt die Farbe des Icons, basierend auf der CSS-Variable */
+}
+
+/* Stil für den Button zum Anzeigen der Antwort */
+.show-answer {
+  align-self: center; /* Zentriert den Button innerhalb des Flex-Containers */
+  margin-top: 10px; /* Abstand oben zum vorhergehenden Element */
+  padding: 10px 20px; /* Innenabstand des Buttons, vergrößert die klickbare Fläche */
+  font-size: 18px; /* Schriftgröße des Buttons */
+  border: none; /* Kein Rahmen */
+  background-color: var(
+    --secondary-color
+  ); /* Hintergrundfarbe des Buttons, basierend auf der CSS-Variable */
+  color: var(
+    --text-color
+  ); /* Textfarbe des Buttons, basierend auf der CSS-Variable */
+  cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+  border-radius: 50px; /* Abgerundete Ecken des Buttons */
 }

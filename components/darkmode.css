@@ -1,0 +1,91 @@
+/*Einstellungslayout*/
+.settings {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Dark Mode Stil für body */
+body.dark-mode {
+  background-color: #3d3c3c; /* Hintergrundfarbe für den gesamten Body im Dark Mode */
+  color: white; /* Textfarbe für den gesamten Body im Dark Mode */
+}
+
+/*-------------------Stile für den Dark-Mode-Toggle-Button------------------*/
+.button--toggle {
+  padding: 10px 20px; /* Innenabstand des Buttons: 10px oben und unten, 20px links und rechts */
+  font-size: 18px; /* Schriftgröße des Button-Textes */
+  border: none; /* Kein Rahmen um den Button */
+  background-color: var(
+    --secondary-color
+  ); /* Hintergrundfarbe des Buttons, festgelegt durch die CSS-Variable */
+  color: var(
+    --text-color
+  ); /* Textfarbe des Buttons, festgelegt durch die CSS-Variable */
+  cursor: pointer; /* Zeigt an, dass der Button klickbar ist */
+  border-radius: 5px; /* Abgerundete Ecken des Buttons */
+  transition: background-color 0.3s, color 0.3s; /* Sanfter Übergang (Transition) für Hintergrundfarbe und Textfarbe, der 0.3 Sekunden dauert */
+}
+
+/* Stil für den Button im Hover-Zustand */
+.button--toggle:hover {
+  background-color: var(
+    --primary-color
+  ); /* Hintergrundfarbe des Buttons ändert sich, wenn der Benutzer mit der Maus darüber fährt (Hover-Effekt) */
+}
+
+/*----------------------FOOTER-DARKMODE---------------------------*/
+
+/* Dark Mode Stile für den Footer */
+.dark-mode footer {
+  background-color: #222222; /* Dunklerer Hintergrund für den Footer im Dark Mode */
+  color: #eee; /* Hellerer Text für den Footer im Dark Mode */
+}
+
+/*---------------QUESTION-CARD-DARK-MODE----------------*/
+
+/* Stile für die Frage-Karten im Dark Mode */
+.dark-mode .question-card {
+  background-color: #333; /* Dunklerer Hintergrund für die Frage-Karten im Dark Mode */
+  color: #eee; /* Hellerer Text für die Frage-Karten im Dark Mode */
+  border: 1px solid #555; /* Dunklerer Rahmen für die Frage-Karten im Dark Mode */
+}
+
+/*-----------------HEADER-DARKMODE---------------*/
+
+.dark-mode header {
+  background-color: #222; /* Dunkler Hintergrund für den Header im Dark Mode */
+  color: #eee; /* Heller Text für den Header im Dark Mode */
+}
+
+/*----------------TAGS-DARKMODE---------------------*/
+.dark-mode .tag {
+  background-color: #555; /* Dunklerer Hintergrund für Tags im Dark Mode */
+  color: #ddd; /* Hellerer Text für Tags im Dark Mode */
+}
+
+/*--------------------------FORM-DARKMODE-----------------------*/
+/* Dark Mode Stile für das Formular */
+.dark-mode .add-question {
+  margin: 20px 0; /* Der Abstand bleibt gleich im Dark Mode */
+}
+
+/* Dark Mode Stile für das Fieldset innerhalb des Formulars */
+.dark-mode fieldset {
+  background-color: #333; /* Dunkler Hintergrund im Dark Mode */
+  box-shadow: 0 2px 4px #0e0d0d; /* Dunklerer Schatten im Dark Mode */
+  border: 1px solid var(--primary-color); /* Dunklerer Rahmen im Dark Mode, festgelegt durch eine CSS-Variable */
+}
+
+/* Dark Mode Stile für das <h2>-Element innerhalb des Formulars */
+.dark-mode .add-question h2 {
+  color: #eee; /* Hellerer Text im Dark Mode */
+}
+
+/* Dark Mode Stile für die Eingabefelder und Textareas innerhalb des Formulars */
+.dark-mode .add-question input,
+.dark-mode .add-question textarea {
+  background-color: #555; /* Dunklerer Hintergrund für Eingabefelder im Dark Mode */
+  color: #eee; /* Hellerer Text für Eingabefelder im Dark Mode */
+  border: 1px solid #666; /* Dunklerer Rahmen für Eingabefelder im Dark Mode */
+}
