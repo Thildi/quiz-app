@@ -1,6 +1,7 @@
 /*-----------------------SUBMIT-NEW-CARD-IMPLEMENTATION----------------------*/
+
 const form = document.getElementById("add-question-form");
-const fieldset = form.closest("fieldset");
+const fieldset = document.getElementById("fieldset");
 
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Verhindere das Standard-Submit-Verhalten
@@ -96,27 +97,36 @@ form.addEventListener("submit", function (event) {
 });
 /*-----------------------COUNT-CHARTACTERS-IMPLEMENTATION---------------------*/
 
+// Funktion, um die verbleibende Zeichenanzahl zu aktualisieren
 function updateCharacterCount(textarea, countElement, maxLength) {
+  // Berechne die verbleibenden Zeichen
   const remaining = maxLength - textarea.value.length;
+
+  // Aktualisiere den Textinhalt des countElement mit der verbleibenden Zeichenanzahl
   countElement.textContent = `${remaining} Zeichen übrig`;
 }
 
-// Event-Handler, um die Zeichenanzahl dynamisch zu aktualisieren
+// Funktion, um den Event-Handler für die Textareas zu setzen
 function attachCharacterCountHandler(textareaId, maxLength) {
+  // Hole das Textarea-Element anhand der übergebenen ID
   const textarea = document.getElementById(textareaId);
+
+  // Hole das Element, das die Zeichenanzahl anzeigen soll, anhand der übergebenen ID
   const countElement = document.querySelector(
     `.char-count[data-for="${textareaId}"]`
   );
 
-  // Initial die Zeichenanzahl aktualisieren
+  // Initial die Zeichenanzahl für das Textarea aktualisieren
   updateCharacterCount(textarea, countElement, maxLength);
 
-  // Event-Listener für das 'input'-Ereignis
+  // Event-Listener hinzufügen, der bei jedem 'input'-Ereignis die Zeichenanzahl aktualisiert
   textarea.addEventListener("input", () => {
     updateCharacterCount(textarea, countElement, maxLength);
   });
 }
 
-// Setze die Event-Handler für beide Textareas
+// Setze den Event-Handler für das Textarea mit der ID 'question' und einer maximalen Länge von 150 Zeichen
 attachCharacterCountHandler("question", 150);
+
+// Setze den Event-Handler für das Textarea mit der ID 'answer' und einer maximalen Länge von 150 Zeichen
 attachCharacterCountHandler("answer", 150);

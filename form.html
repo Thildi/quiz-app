@@ -1,87 +1,104 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Neue Frage hinzufügen</title>
-  <link rel="stylesheet" href="./styles.css" /> 
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-/>
-<script src="./index.js" defer></script>
-<script src="./form.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neue Frage hinzufügen</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="./index.js" defer></script>
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
     <header>
-        <h1>Quiz App</h1>
-      </header>
+      <h1>Quiz App</h1>
+    </header>
 
-  <main class="content_container">
-    <section class="add-question">
-        <fieldset >
-        <h2>Neue Karte erstellen</h2>
-        <form id="add-question-form">
-          <label for="question">Deine Frage:</label>
-          <textarea id="question" name="question" title="Deine Frage" maxlength="150" rows="5" cols="40"required></textarea>
-          <div class="char-count" data-for="question">150 Zeichen übrig</div>
-          
-    
-          <label for="answer">Deine Antwort:</label>
-          <textarea id="answer" name="answer" title="Deine Antwort" maxlength="150" rows="5" cols="40"required></textarea>
-          <div class="char-count" data-for="answer">150 Zeichen übrig</div>
-    
-          <label for="tags">Tag:</label>
-          <input type="text" id="tags" name="tags" />
-    
-          <button type="submit">Karte hinzufügen</button>
+    <main class="content_container">
+      <section class="add-question">
+        <fieldset id="fieldset" data-js="fieldset">
+          <h2>Neue Karte erstellen</h2>
+          <form id="add-question-form" data-js="add-question-form">
+            <label for="question">Deine Frage:</label>
+            <textarea
+              id="question"
+              name="question"
+              title="Deine Frage"
+              maxlength="150"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+            <div class="char-count" data-for="question">150 Zeichen übrig</div>
+
+            <label for="answer">Deine Antwort:</label>
+            <textarea
+              id="answer"
+              name="answer"
+              title="Deine Antwort"
+              maxlength="150"
+              rows="5"
+              cols="40"
+              required
+            ></textarea>
+            <div class="char-count" data-for="answer">150 Zeichen übrig</div>
+
+            <label for="tags">Tag:</label>
+            <input type="text" id="tags" name="tags" />
+
+            <button type="submit">Karte hinzufügen</button>
+          </form>
         </fieldset>
-        </form>
       </section>
-
-  </main>
-  <footer>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li>
-          <a
-            href="./index.html"
-            class="nav-button"
-            aria-label="Startseite"
-            title="Startseite"
-            ><i class="fa-sharp fa-solid fa-house fa-2xl"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="bookmarks.html"
-            class="nav-button"
-            aria-label="Lesezeichen"
-            title="Lesezeichen"
-            ><i class="fa-regular fa-bookmark fa-2xl"></i
-          ></a>
-        </li>
-        <li>
+    </main>
+    <footer>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li>
+            <a
+              href="./index.html"
+              class="nav-button"
+              aria-label="Startseite"
+              title="Startseite"
+              ><i class="fa-sharp fa-solid fa-house fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="bookmarks.html"
+              class="nav-button"
+              aria-label="Lesezeichen"
+              title="Lesezeichen"
+              ><i class="fa-regular fa-bookmark fa-2xl"></i
+            ></a>
+          </li>
+          <li>
             <!-- Hier wird das neue Icon hinzugefügt, das zur Form verlinkt -->
             <a
               href="form.html"
               class="nav-button"
               aria-label="Neue Karte erstellen"
               title="Neue Karte erstellen"
-              ><i class="fa-solid fa-circle-plus fa-2xl" style="color: #74C0FC;"></i
+              ><i
+                class="fa-solid fa-circle-plus fa-2xl"
+                style="color: #74c0fc"
+              ></i
             ></a>
           </li>
-        <li>
-          <a
-            href="profile.html"
-            class="nav-button"
-            aria-label="Profil"
-            title="Profilseite"
-            ><i class="fa-solid fa-user fa-2xl"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
-  </footer>
-</body>
+          <li>
+            <a
+              href="profile.html"
+              class="nav-button"
+              aria-label="Profil"
+              title="Profilseite"
+              ><i class="fa-solid fa-user fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
 </html>

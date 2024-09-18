@@ -48,25 +48,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /*----------------------------BOOKMARK-TOGGLE-IMPLEMENTATION---------------------*/
-
+// Warten, bis der DOM vollständig geladen ist, bevor der Code ausgeführt wird
 document.addEventListener("DOMContentLoaded", function () {
+  // Wähle alle Elemente mit dem Attribut data-js="bookmark-button" aus
   const bookmarkButtons = document.querySelectorAll(
     '[data-js="bookmark-button"]'
   );
 
+  // Durchlaufe jedes gefundene Element (Bookmark-Button)
   bookmarkButtons.forEach((button) => {
+    // Füge einen Event-Listener für das 'click'-Ereignis hinzu
     button.addEventListener("click", function () {
+      // Finde das <i>-Element innerhalb des Buttons
       const icon = this.querySelector("i");
 
-      // Icon-Klasse umschalten zwischen "fa-regular" und "fa-solid"
+      // Überprüfe, ob das <i>-Element die Klasse "fa-regular" hat
       if (icon.classList.contains("fa-regular")) {
+        // Wenn die Klasse vorhanden ist, entferne sie und füge "fa-solid" hinzu
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
-        icon.style.color = "#74c0fc"; // Farbe ändern, falls gewünscht
       } else {
+        // Andernfalls entferne "fa-solid" und füge "fa-regular" hinzu
         icon.classList.remove("fa-solid");
         icon.classList.add("fa-regular");
-        icon.style.color = ""; // Farbe zurücksetzen
       }
     });
   });
